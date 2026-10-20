@@ -1,0 +1,18 @@
+{
+  "name": "geo-explorer",
+  "version": "1.0.0",
+  "description": "Agente de IA com trilhas fictícias, desafios e certificados via servidor MCP",
+  "type": "module",
+  "main": "mcp-server/index.js",
+  "scripts": {
+    "start": "node mcp-server/index.js",
+    "cli": "node cli.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.0"
+  }
+}

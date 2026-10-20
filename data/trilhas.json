@@ -1,0 +1,772 @@
+{
+  "javascript": {
+    "iniciante": {
+      "descricao": "Fundamentos de JavaScript: variáveis, tipos, funções e controle de fluxo.",
+      "recursos_iniciais": [
+        { "titulo": "JavaScript — MDN Web Docs (PT-BR)", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide" },
+        { "titulo": "JavaScript para iniciantes — The Odin Project", "url": "https://www.theodinproject.com/paths/foundations/courses/foundations#javascript-basics" },
+        { "titulo": "Curso JS gratuito — freeCodeCamp", "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" }
+      ],
+      "modulos": [
+        {
+          "titulo": "Introdução ao JavaScript e ambiente de desenvolvimento",
+          "duracao_horas": 2,
+          "conceitos": ["O que é JavaScript e onde roda", "Diferença entre HTML, CSS e JS", "Como usar o console do navegador", "Seu primeiro script com console.log"],
+          "recursos": [
+            { "titulo": "O que é JavaScript — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript" },
+            { "titulo": "Como usar o console do navegador", "url": "https://developer.chrome.com/docs/devtools/console/" }
+          ]
+        },
+        {
+          "titulo": "Variáveis, tipos de dados e operadores",
+          "duracao_horas": 3,
+          "conceitos": ["var, let e const", "Tipos: string, number, boolean, null, undefined", "Operadores aritméticos e de comparação", "Template literals"],
+          "recursos": [
+            { "titulo": "Variáveis — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/Variables" },
+            { "titulo": "Tipos de dados — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Data_structures" }
+          ]
+        },
+        {
+          "titulo": "Condicionais e laços de repetição",
+          "duracao_horas": 3,
+          "conceitos": ["if / else / else if", "switch / case", "for, while e do...while", "break e continue"],
+          "recursos": [
+            { "titulo": "Condicionais — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals" },
+            { "titulo": "Laços de repetição — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Looping_code" }
+          ]
+        },
+        {
+          "titulo": "Funções e escopo",
+          "duracao_horas": 4,
+          "conceitos": ["Declaração de função vs. expressão de função", "Parâmetros e retorno", "Escopo local e global", "Hoisting"],
+          "recursos": [
+            { "titulo": "Funções — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions" },
+            { "titulo": "Escopo em JavaScript — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Glossary/Scope" }
+          ]
+        },
+        {
+          "titulo": "Arrays e objetos básicos",
+          "duracao_horas": 3,
+          "conceitos": ["Criando e acessando arrays", "Métodos: push, pop, shift, unshift, length", "Criando e acessando objetos", "Iterando com for...of e for...in"],
+          "recursos": [
+            { "titulo": "Arrays — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array" },
+            { "titulo": "Objetos — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/Basics" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Crie uma função chamada `soma` que recebe dois números e retorna a soma deles.",
+          "dica": "Use o operador `+` dentro da função e lembre-se de retornar o resultado com `return`."
+        },
+        {
+          "enunciado": "Dado um array de números, crie uma função que retorna apenas os números pares.",
+          "dica": "Use o método `filter` e o operador `%` para verificar se o número é divisível por 2."
+        },
+        {
+          "enunciado": "Crie uma função `contarVogais` que recebe uma string e retorna quantas vogais ela tem.",
+          "dica": "Percorra cada caractere com um laço `for` e verifique se ele está no array ['a','e','i','o','u']."
+        }
+      ]
+    },
+    "intermediario": {
+      "descricao": "JavaScript moderno: ES6+, manipulação do DOM, requisições HTTP e promises.",
+      "recursos_iniciais": [
+        { "titulo": "ES6+ — JavaScript.info", "url": "https://javascript.info/" },
+        { "titulo": "DOM Manipulation — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents" }
+      ],
+      "modulos": [
+        {
+          "titulo": "Arrow functions, destructuring e spread",
+          "duracao_horas": 3,
+          "conceitos": ["Sintaxe de arrow function", "Destructuring de arrays e objetos", "Spread operator (...)", "Rest parameters"],
+          "recursos": [
+            { "titulo": "Arrow functions — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions" },
+            { "titulo": "Destructuring — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" }
+          ]
+        },
+        {
+          "titulo": "Promises e async/await",
+          "duracao_horas": 4,
+          "conceitos": ["O que é uma Promise", "Estados: pending, fulfilled, rejected", ".then() e .catch()", "async/await como açúcar sintático"],
+          "recursos": [
+            { "titulo": "Promises — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise" },
+            { "titulo": "async/await — javascript.info", "url": "https://javascript.info/async-await" }
+          ]
+        },
+        {
+          "titulo": "Manipulação do DOM",
+          "duracao_horas": 4,
+          "conceitos": ["document.querySelector e querySelectorAll", "Criando e removendo elementos", "Eventos: click, input, submit", "classList: add, remove, toggle"],
+          "recursos": [
+            { "titulo": "Introdução ao DOM — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction" },
+            { "titulo": "Eventos — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events" }
+          ]
+        },
+        {
+          "titulo": "Fetch API e consumo de APIs REST",
+          "duracao_horas": 4,
+          "conceitos": ["O que é uma API REST", "Métodos HTTP: GET, POST, PUT, DELETE", "fetch() com async/await", "Tratando erros de rede"],
+          "recursos": [
+            { "titulo": "Fetch API — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch" },
+            { "titulo": "API pública para praticar: JSONPlaceholder", "url": "https://jsonplaceholder.typicode.com/" }
+          ]
+        },
+        {
+          "titulo": "Módulos ES6 e organização de código",
+          "duracao_horas": 3,
+          "conceitos": ["export e import", "Default export vs named export", "Organização de arquivos por responsabilidade", "Como usar com Node.js (type: module)"],
+          "recursos": [
+            { "titulo": "Módulos JS — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Modules" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Consuma a API pública `https://jsonplaceholder.typicode.com/users` e exiba os nomes dos usuários no console.",
+          "dica": "Use `fetch` com `async/await` e itere sobre o array retornado com `forEach`."
+        },
+        {
+          "enunciado": "Crie uma função assíncrona que busca um post pelo ID na JSONPlaceholder e retorna o título.",
+          "dica": "Use `fetch` com template string para montar a URL dinâmica e `await response.json()`."
+        }
+      ]
+    },
+    "avancado": {
+      "descricao": "Padrões avançados: closures, protótipos, design patterns e otimização de performance.",
+      "recursos_iniciais": [
+        { "titulo": "You Don't Know JS (livro gratuito)", "url": "https://github.com/getify/You-Dont-Know-JS" },
+        { "titulo": "JavaScript avançado — javascript.info", "url": "https://javascript.info/advanced-functions" }
+      ],
+      "modulos": [
+        {
+          "titulo": "Closures e currying",
+          "duracao_horas": 4,
+          "conceitos": ["O que é closure e por que importa", "Casos de uso: contadores, factories", "Currying: transformar f(a,b) em f(a)(b)", "Partial application"],
+          "recursos": [
+            { "titulo": "Closures — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Closures" },
+            { "titulo": "Currying — javascript.info", "url": "https://javascript.info/currying-partials" }
+          ]
+        },
+        {
+          "titulo": "Prototype chain e herança",
+          "duracao_horas": 4,
+          "conceitos": ["__proto__ e prototype", "Object.create()", "Classes ES6 como açúcar sintático", "Herança com extends e super"],
+          "recursos": [
+            { "titulo": "Herança e prototype — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Inheritance_and_the_prototype_chain" }
+          ]
+        },
+        {
+          "titulo": "Design patterns em JavaScript",
+          "duracao_horas": 5,
+          "conceitos": ["Singleton", "Observer / PubSub", "Factory", "Module pattern"],
+          "recursos": [
+            { "titulo": "JavaScript Design Patterns — patterns.dev", "url": "https://www.patterns.dev/vanilla" }
+          ]
+        },
+        {
+          "titulo": "Web Workers e performance",
+          "duracao_horas": 4,
+          "conceitos": ["Event loop: call stack, microtasks, macrotasks", "Web Workers: processamento paralelo", "Debounce e throttle", "Lazy loading"],
+          "recursos": [
+            { "titulo": "Web Workers — MDN", "url": "https://developer.mozilla.org/pt-BR/docs/Web/API/Web_Workers_API/Using_web_workers" },
+            { "titulo": "Event Loop — Jake Archibald (vídeo)", "url": "https://www.youtube.com/watch?v=cCOL7MC4Pl0" }
+          ]
+        },
+        {
+          "titulo": "Testes unitários com Jest",
+          "duracao_horas": 4,
+          "conceitos": ["O que são testes unitários", "describe, it/test e expect", "Mocks e spies", "Cobertura de código (coverage)"],
+          "recursos": [
+            { "titulo": "Documentação oficial do Jest", "url": "https://jestjs.io/pt-BR/docs/getting-started" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Implemente o padrão Observer em JavaScript puro, sem bibliotecas.",
+          "dica": "Crie uma classe com métodos `subscribe`, `unsubscribe` e `notify`, e use um array para guardar os callbacks."
+        },
+        {
+          "enunciado": "Crie uma função `memoize` genérica que armazena em cache o resultado de qualquer função.",
+          "dica": "Use um objeto como cache e a serialização dos argumentos como chave."
+        }
+      ]
+    }
+  },
+  "python": {
+    "iniciante": {
+      "descricao": "Fundamentos de Python: sintaxe, tipos, funções e estruturas de dados.",
+      "recursos_iniciais": [
+        { "titulo": "Tutorial oficial do Python (PT-BR)", "url": "https://docs.python.org/pt-br/3/tutorial/" },
+        { "titulo": "Python para iniciantes — freeCodeCamp", "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/" },
+        { "titulo": "Curso Python — Gustavo Guanabara (YouTube)", "url": "https://www.youtube.com/playlist?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6" }
+      ],
+      "modulos": [
+        {
+          "titulo": "Instalação do Python e primeiro script",
+          "duracao_horas": 1,
+          "conceitos": ["Baixar e instalar o Python", "Executar scripts pelo terminal", "print() e input()", "Comentários com #"],
+          "recursos": [
+            { "titulo": "Download Python", "url": "https://www.python.org/downloads/" },
+            { "titulo": "Python Hello World — docs oficiais", "url": "https://docs.python.org/pt-br/3/tutorial/introduction.html" }
+          ]
+        },
+        {
+          "titulo": "Variáveis, tipos de dados e entrada do usuário",
+          "duracao_horas": 3,
+          "conceitos": ["Tipagem dinâmica", "int, float, str, bool", "Conversão de tipos: int(), str(), float()", "f-strings para formatação"],
+          "recursos": [
+            { "titulo": "Tipos em Python — docs oficiais", "url": "https://docs.python.org/pt-br/3/library/stdtypes.html" },
+            { "titulo": "f-strings — Real Python", "url": "https://realpython.com/python-f-strings/" }
+          ]
+        },
+        {
+          "titulo": "Condicionais e laços (if, for, while)",
+          "duracao_horas": 3,
+          "conceitos": ["if / elif / else", "for item in lista", "while com condição", "range() e enumerate()"],
+          "recursos": [
+            { "titulo": "Controle de fluxo — docs oficiais", "url": "https://docs.python.org/pt-br/3/tutorial/controlflow.html" }
+          ]
+        },
+        {
+          "titulo": "Funções e parâmetros",
+          "duracao_horas": 3,
+          "conceitos": ["def e return", "Parâmetros padrão", "*args e **kwargs", "Docstrings"],
+          "recursos": [
+            { "titulo": "Funções — docs oficiais", "url": "https://docs.python.org/pt-br/3/tutorial/controlflow.html#defining-functions" }
+          ]
+        },
+        {
+          "titulo": "Listas, tuplas e dicionários",
+          "duracao_horas": 4,
+          "conceitos": ["Listas: append, remove, sort, len", "Tuplas: imutabilidade e uso", "Dicionários: chave-valor, get(), items()", "List comprehension básica"],
+          "recursos": [
+            { "titulo": "Estruturas de dados — docs oficiais", "url": "https://docs.python.org/pt-br/3/tutorial/datastructures.html" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Escreva uma função `fatorial` que calcula o fatorial de um número inteiro positivo.",
+          "dica": "Use recursão ou um laço `for` que multiplica os valores de 1 até n."
+        },
+        {
+          "enunciado": "Dado uma lista de palavras, retorne apenas as que têm mais de 5 letras.",
+          "dica": "Use list comprehension com a condição `len(palavra) > 5`."
+        },
+        {
+          "enunciado": "Crie uma função `inverter_string` que recebe uma string e retorna ela invertida.",
+          "dica": "Em Python, você pode usar fatiamento com passo -1: `texto[::-1]`."
+        }
+      ]
+    },
+    "intermediario": {
+      "descricao": "Python intermediário: POO, manipulação de arquivos, bibliotecas e APIs.",
+      "recursos_iniciais": [
+        { "titulo": "POO em Python — Real Python", "url": "https://realpython.com/python3-object-oriented-programming/" },
+        { "titulo": "Requests library", "url": "https://requests.readthedocs.io/en/latest/" }
+      ],
+      "modulos": [
+        {
+          "titulo": "Orientação a objetos: classes e herança",
+          "duracao_horas": 5,
+          "conceitos": ["class, __init__ e self", "Atributos e métodos", "Herança com super()", "Encapsulamento com _ e __"],
+          "recursos": [
+            { "titulo": "Classes — docs oficiais", "url": "https://docs.python.org/pt-br/3/tutorial/classes.html" },
+            { "titulo": "POO — Real Python", "url": "https://realpython.com/python3-object-oriented-programming/" }
+          ]
+        },
+        {
+          "titulo": "Leitura e escrita de arquivos (txt, csv, json)",
+          "duracao_horas": 3,
+          "conceitos": ["open(), read(), write() e close()", "with statement (context manager)", "Módulo csv", "Módulo json: dumps e loads"],
+          "recursos": [
+            { "titulo": "Arquivos — docs oficiais", "url": "https://docs.python.org/pt-br/3/tutorial/inputoutput.html#reading-and-writing-files" },
+            { "titulo": "Módulo json — docs oficiais", "url": "https://docs.python.org/pt-br/3/library/json.html" }
+          ]
+        },
+        {
+          "titulo": "Bibliotecas padrão: os, datetime, re",
+          "duracao_horas": 4,
+          "conceitos": ["os.path para caminhos de arquivo", "datetime para datas e horas", "re para expressões regulares básicas", "Instalando libs com pip"],
+          "recursos": [
+            { "titulo": "Módulo os — docs oficiais", "url": "https://docs.python.org/pt-br/3/library/os.html" },
+            { "titulo": "Módulo datetime — docs oficiais", "url": "https://docs.python.org/pt-br/3/library/datetime.html" }
+          ]
+        },
+        {
+          "titulo": "Consumo de APIs com requests",
+          "duracao_horas": 3,
+          "conceitos": ["Instalando requests", "requests.get() e .post()", "response.json() e status_code", "Tratando erros de conexão"],
+          "recursos": [
+            { "titulo": "Requests — documentação oficial", "url": "https://requests.readthedocs.io/en/latest/user/quickstart/" },
+            { "titulo": "API pública para praticar: JSONPlaceholder", "url": "https://jsonplaceholder.typicode.com/" }
+          ]
+        },
+        {
+          "titulo": "Tratamento de erros e exceções",
+          "duracao_horas": 3,
+          "conceitos": ["try / except / finally", "Tipos de exceção: ValueError, TypeError, FileNotFoundError", "raise para lançar exceções", "Criando exceções customizadas"],
+          "recursos": [
+            { "titulo": "Exceções — docs oficiais", "url": "https://docs.python.org/pt-br/3/tutorial/errors.html" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Crie uma classe `ContaBancaria` com métodos `depositar`, `sacar` e `saldo`. O saque não pode deixar o saldo negativo.",
+          "dica": "Use um atributo `_saldo` e valide no método `sacar` antes de subtrair."
+        },
+        {
+          "enunciado": "Leia um arquivo CSV de notas de alunos e calcule a média de cada um.",
+          "dica": "Use o módulo `csv` do Python e um dicionário para agrupar as notas por aluno."
+        }
+      ]
+    },
+    "avancado": {
+      "descricao": "Python avançado: decorators, generators, concorrência e boas práticas.",
+      "recursos_iniciais": [
+        { "titulo": "Python avançado — Real Python", "url": "https://realpython.com/tutorials/advanced/" },
+        { "titulo": "asyncio — docs oficiais", "url": "https://docs.python.org/pt-br/3/library/asyncio.html" }
+      ],
+      "modulos": [
+        {
+          "titulo": "Decorators e metaprogramação",
+          "duracao_horas": 5,
+          "conceitos": ["Funções como objetos de primeira classe", "Criando decorators com @wraps", "Decorators com parâmetros", "Decorators de classe"],
+          "recursos": [
+            { "titulo": "Decorators — Real Python", "url": "https://realpython.com/primer-on-python-decorators/" }
+          ]
+        },
+        {
+          "titulo": "Generators e iteradores",
+          "duracao_horas": 4,
+          "conceitos": ["yield vs return", "Criando generators com def", "Generator expressions", "__iter__ e __next__"],
+          "recursos": [
+            { "titulo": "Generators — Real Python", "url": "https://realpython.com/introduction-to-python-generators/" }
+          ]
+        },
+        {
+          "titulo": "Concorrência com asyncio",
+          "duracao_horas": 5,
+          "conceitos": ["Event loop do Python", "async def e await", "asyncio.gather() para paralelismo", "aiohttp para requisições assíncronas"],
+          "recursos": [
+            { "titulo": "asyncio — docs oficiais", "url": "https://docs.python.org/pt-br/3/library/asyncio.html" },
+            { "titulo": "asyncio — Real Python", "url": "https://realpython.com/async-io-python/" }
+          ]
+        },
+        {
+          "titulo": "Type hints e mypy",
+          "duracao_horas": 3,
+          "conceitos": ["Anotações de tipo básicas", "typing: List, Dict, Optional, Union", "Verificação estática com mypy", "Dataclasses com tipos"],
+          "recursos": [
+            { "titulo": "Type hints — docs oficiais", "url": "https://docs.python.org/pt-br/3/library/typing.html" },
+            { "titulo": "mypy", "url": "https://mypy.readthedocs.io/en/stable/" }
+          ]
+        },
+        {
+          "titulo": "Testes com pytest e cobertura de código",
+          "duracao_horas": 4,
+          "conceitos": ["Estrutura de um teste com pytest", "Fixtures e parametrize", "Mocking com unittest.mock", "pytest-cov para cobertura"],
+          "recursos": [
+            { "titulo": "pytest — documentação oficial", "url": "https://docs.pytest.org/en/stable/" },
+            { "titulo": "Testes em Python — Real Python", "url": "https://realpython.com/pytest-python-testing/" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Implemente um decorator `@cronometrar` que mede e imprime o tempo de execução de qualquer função.",
+          "dica": "Use `time.perf_counter()` antes e depois da chamada da função interna."
+        },
+        {
+          "enunciado": "Crie um generator `fibonacci` que produz a sequência de Fibonacci indefinidamente.",
+          "dica": "Use `yield` dentro de um laço infinito `while True`, mantendo as variáveis `a` e `b`."
+        }
+      ]
+    }
+  },
+  "react": {
+    "iniciante": {
+      "descricao": "Primeiros passos com React: componentes, props, estado e eventos.",
+      "recursos_iniciais": [
+        { "titulo": "Documentação oficial do React", "url": "https://react.dev/learn" },
+        { "titulo": "Tutorial prático — react.dev", "url": "https://react.dev/learn/tutorial-tic-tac-toe" },
+        { "titulo": "React para iniciantes — freeCodeCamp", "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/#react" }
+      ],
+      "modulos": [
+        {
+          "titulo": "O que é React e como funciona o Virtual DOM",
+          "duracao_horas": 2,
+          "conceitos": ["Por que React foi criado", "Virtual DOM vs DOM real", "Componentes como blocos de construção", "Criando projeto com Vite"],
+          "recursos": [
+            { "titulo": "Início rápido — react.dev", "url": "https://react.dev/learn" },
+            { "titulo": "Criar projeto com Vite", "url": "https://vitejs.dev/guide/" }
+          ]
+        },
+        {
+          "titulo": "Criando componentes funcionais com JSX",
+          "duracao_horas": 3,
+          "conceitos": ["O que é JSX", "Regras do JSX: uma raiz, className, camelCase", "Componente funcional básico", "Exportando e importando componentes"],
+          "recursos": [
+            { "titulo": "JSX — react.dev", "url": "https://react.dev/learn/writing-markup-with-jsx" },
+            { "titulo": "Seu primeiro componente — react.dev", "url": "https://react.dev/learn/your-first-component" }
+          ]
+        },
+        {
+          "titulo": "Props e composição de componentes",
+          "duracao_horas": 3,
+          "conceitos": ["O que são props", "Passando dados de pai para filho", "Props com destructuring", "children prop"],
+          "recursos": [
+            { "titulo": "Passando props — react.dev", "url": "https://react.dev/learn/passing-props-to-a-component" }
+          ]
+        },
+        {
+          "titulo": "Estado com useState e eventos",
+          "duracao_horas": 4,
+          "conceitos": ["Por que precisamos de estado", "useState: valor e setter", "Eventos: onClick, onChange, onSubmit", "Imutabilidade do estado"],
+          "recursos": [
+            { "titulo": "useState — react.dev", "url": "https://react.dev/reference/react/useState" },
+            { "titulo": "Respondendo a eventos — react.dev", "url": "https://react.dev/learn/responding-to-events" }
+          ]
+        },
+        {
+          "titulo": "Renderização condicional e listas",
+          "duracao_horas": 3,
+          "conceitos": ["if/else dentro de JSX", "Operador ternário e &&", "Renderizando arrays com .map()", "A prop key e por que ela importa"],
+          "recursos": [
+            { "titulo": "Renderização condicional — react.dev", "url": "https://react.dev/learn/conditional-rendering" },
+            { "titulo": "Renderizando listas — react.dev", "url": "https://react.dev/learn/rendering-lists" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Crie um componente `Contador` com botões de incrementar e decrementar que exibe o valor atual.",
+          "dica": "Use `useState(0)` para guardar o valor e `onClick` nos botões para atualizar o estado."
+        },
+        {
+          "enunciado": "Crie um componente `ListaTarefas` que permite adicionar e remover itens de uma lista.",
+          "dica": "Use um array no estado e os métodos `spread` para adicionar e `filter` para remover."
+        },
+        {
+          "enunciado": "Crie um componente `CartaoUsuario` que recebe `nome`, `cargo` e `avatar` como props e os exibe formatados.",
+          "dica": "Lembre-se que props são somente leitura — use-as diretamente no JSX sem modificar."
+        }
+      ]
+    },
+    "intermediario": {
+      "descricao": "React intermediário: hooks, contexto, roteamento e consumo de APIs.",
+      "recursos_iniciais": [
+        { "titulo": "Hooks — react.dev", "url": "https://react.dev/reference/react/hooks" },
+        { "titulo": "React Router — documentação oficial", "url": "https://reactrouter.com/start/library/installation" }
+      ],
+      "modulos": [
+        {
+          "titulo": "useEffect e ciclo de vida dos componentes",
+          "duracao_horas": 4,
+          "conceitos": ["Para que serve useEffect", "Array de dependências", "Cleanup function", "Buscando dados na montagem do componente"],
+          "recursos": [
+            { "titulo": "useEffect — react.dev", "url": "https://react.dev/reference/react/useEffect" },
+            { "titulo": "Sincronizando com efeitos — react.dev", "url": "https://react.dev/learn/synchronizing-with-effects" }
+          ]
+        },
+        {
+          "titulo": "useContext e gerenciamento de estado global",
+          "duracao_horas": 4,
+          "conceitos": ["O problema do prop drilling", "createContext e Provider", "useContext para consumir", "Quando usar Context vs props"],
+          "recursos": [
+            { "titulo": "useContext — react.dev", "url": "https://react.dev/reference/react/useContext" },
+            { "titulo": "Passando dados com Context — react.dev", "url": "https://react.dev/learn/passing-data-deeply-with-context" }
+          ]
+        },
+        {
+          "titulo": "React Router: navegação entre páginas",
+          "duracao_horas": 3,
+          "conceitos": ["BrowserRouter, Routes e Route", "Link e NavLink", "useParams para rotas dinâmicas", "useNavigate para redirecionamento"],
+          "recursos": [
+            { "titulo": "React Router — documentação oficial", "url": "https://reactrouter.com/start/library/installation" }
+          ]
+        },
+        {
+          "titulo": "Consumo de APIs com fetch e useEffect",
+          "duracao_horas": 4,
+          "conceitos": ["Padrão loading / data / error", "Fetch dentro de useEffect", "Cancelando requisições com AbortController", "Exibindo estados de carregamento"],
+          "recursos": [
+            { "titulo": "Fetch com useEffect — react.dev", "url": "https://react.dev/reference/react/useEffect#fetching-data-with-effects" }
+          ]
+        },
+        {
+          "titulo": "Formulários controlados e validação",
+          "duracao_horas": 3,
+          "conceitos": ["Inputs controlados vs não controlados", "onChange para sincronizar estado", "Validação manual no submit", "useRef para inputs não controlados"],
+          "recursos": [
+            { "titulo": "Formulários — react.dev", "url": "https://react.dev/learn/sharing-state-between-components" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Crie uma aplicação que busca usuários da API JSONPlaceholder e os exibe em cards.",
+          "dica": "Use `useEffect` para fazer o fetch na montagem do componente e `useState` para guardar os dados."
+        },
+        {
+          "enunciado": "Implemente autenticação fictícia com Context API: login, logout e proteção de rotas.",
+          "dica": "Crie um `AuthContext` com `useState` para o usuário e use `Navigate` do React Router para proteger rotas."
+        }
+      ]
+    },
+    "avancado": {
+      "descricao": "React avançado: performance, testes, Server Components e arquitetura escalável.",
+      "recursos_iniciais": [
+        { "titulo": "React avançado — react.dev", "url": "https://react.dev/learn/escape-hatches" },
+        { "titulo": "React Testing Library", "url": "https://testing-library.com/docs/react-testing-library/intro/" }
+      ],
+      "modulos": [
+        {
+          "titulo": "useMemo, useCallback e React.memo",
+          "duracao_horas": 4,
+          "conceitos": ["Quando o React re-renderiza", "useMemo para memorizar valores", "useCallback para memorizar funções", "React.memo para evitar re-render de filhos"],
+          "recursos": [
+            { "titulo": "useMemo — react.dev", "url": "https://react.dev/reference/react/useMemo" },
+            { "titulo": "useCallback — react.dev", "url": "https://react.dev/reference/react/useCallback" }
+          ]
+        },
+        {
+          "titulo": "Custom hooks e reuso de lógica",
+          "duracao_horas": 4,
+          "conceitos": ["O que é um custom hook", "Regras dos hooks", "Extraindo lógica repetida", "Exemplos: useFetch, useLocalStorage, useDebounce"],
+          "recursos": [
+            { "titulo": "Reusando lógica com custom hooks — react.dev", "url": "https://react.dev/learn/reusing-logic-with-custom-hooks" }
+          ]
+        },
+        {
+          "titulo": "Testes com React Testing Library",
+          "duracao_horas": 5,
+          "conceitos": ["Filosofia: testar comportamento, não implementação", "render, screen e fireEvent", "Queries: getBy, findBy, queryBy", "userEvent para interações reais"],
+          "recursos": [
+            { "titulo": "React Testing Library — docs", "url": "https://testing-library.com/docs/react-testing-library/intro/" }
+          ]
+        },
+        {
+          "titulo": "Introdução ao Next.js e Server Components",
+          "duracao_horas": 5,
+          "conceitos": ["App Router vs Pages Router", "Server Components vs Client Components", "Fetching de dados no servidor", "Rotas e layouts no Next.js"],
+          "recursos": [
+            { "titulo": "Next.js — documentação oficial", "url": "https://nextjs.org/docs" },
+            { "titulo": "Tutorial Next.js", "url": "https://nextjs.org/learn" }
+          ]
+        },
+        {
+          "titulo": "Arquitetura de componentes escalável",
+          "duracao_horas": 4,
+          "conceitos": ["Atomic Design", "Compound Components pattern", "Separação de UI e lógica", "Colocação de estado (state colocation)"],
+          "recursos": [
+            { "titulo": "Thinking in React — react.dev", "url": "https://react.dev/learn/thinking-in-react" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Crie um custom hook `useFetch` genérico que retorna `data`, `loading` e `error`.",
+          "dica": "Use `useState` para os três valores e `useEffect` para fazer a requisição, tratando os estados de loading e erro."
+        },
+        {
+          "enunciado": "Otimize um componente de lista longa usando `useMemo` e `React.memo` para evitar re-renders desnecessários.",
+          "dica": "Envolva o componente de item com `React.memo` e use `useMemo` para filtros ou transformações da lista."
+        }
+      ]
+    }
+  },
+  "nodejs": {
+    "iniciante": {
+      "descricao": "Introdução ao Node.js: módulos, sistema de arquivos e criação de servidores simples.",
+      "recursos_iniciais": [
+        { "titulo": "Documentação oficial do Node.js", "url": "https://nodejs.org/pt/docs" },
+        { "titulo": "Guia Node.js para iniciantes — nodejs.dev", "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs" },
+        { "titulo": "Node.js — freeCodeCamp", "url": "https://www.freecodecamp.org/learn/back-end-development-and-apis/" }
+      ],
+      "modulos": [
+        {
+          "titulo": "O que é Node.js e como funciona o event loop",
+          "duracao_horas": 2,
+          "conceitos": ["Node.js não é um framework — é um runtime", "JavaScript fora do navegador", "Event loop e non-blocking I/O", "npm e o ecossistema de pacotes"],
+          "recursos": [
+            { "titulo": "Introdução ao Node.js — docs oficiais", "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs" },
+            { "titulo": "Event loop explicado — nodejs.org", "url": "https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick" }
+          ]
+        },
+        {
+          "titulo": "Módulos nativos: fs, path e os",
+          "duracao_horas": 3,
+          "conceitos": ["CommonJS vs ES Modules", "fs: readFile, writeFile, existsSync", "path: join, resolve, dirname", "os: platform, homedir, cpus"],
+          "recursos": [
+            { "titulo": "Módulo fs — docs oficiais", "url": "https://nodejs.org/api/fs.html" },
+            { "titulo": "Módulo path — docs oficiais", "url": "https://nodejs.org/api/path.html" }
+          ]
+        },
+        {
+          "titulo": "npm: instalação e gerenciamento de pacotes",
+          "duracao_horas": 2,
+          "conceitos": ["package.json: o que é e para que serve", "npm install, uninstall e update", "dependencies vs devDependencies", "Scripts no package.json"],
+          "recursos": [
+            { "titulo": "npm — documentação oficial", "url": "https://docs.npmjs.com/getting-started" }
+          ]
+        },
+        {
+          "titulo": "Criando um servidor HTTP com o módulo http",
+          "duracao_horas": 3,
+          "conceitos": ["http.createServer()", "req: url, method, headers", "res: writeHead, write, end", "Roteamento manual simples"],
+          "recursos": [
+            { "titulo": "Módulo http — docs oficiais", "url": "https://nodejs.org/api/http.html" },
+            { "titulo": "Criando servidor HTTP — nodejs.org", "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs" }
+          ]
+        },
+        {
+          "titulo": "Leitura e escrita de arquivos com fs",
+          "duracao_horas": 3,
+          "conceitos": ["Leitura síncrona vs assíncrona", "fs.readFileSync e fs.readFile", "fs.writeFileSync e fs.appendFile", "Trabalhando com JSON em arquivos"],
+          "recursos": [
+            { "titulo": "Trabalhando com arquivos — nodejs.org", "url": "https://nodejs.org/en/learn/manipulating-files/reading-files-with-nodejs" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Crie um servidor HTTP que responde 'Olá, Geo-Explorer!' para qualquer requisição GET.",
+          "dica": "Use `http.createServer` e o método `res.end()` para enviar a resposta."
+        },
+        {
+          "enunciado": "Escreva um script que lê um arquivo `.txt` e conta quantas linhas ele tem.",
+          "dica": "Use `fs.readFileSync` e divida o conteúdo por `\\n` com o método `split`."
+        },
+        {
+          "enunciado": "Crie um script que lê um arquivo JSON, adiciona um novo item ao array e salva o arquivo atualizado.",
+          "dica": "Use `JSON.parse` para ler, manipule o array normalmente e `JSON.stringify` com indentação para salvar."
+        }
+      ]
+    },
+    "intermediario": {
+      "descricao": "Node.js intermediário: Express, rotas, middlewares e banco de dados.",
+      "recursos_iniciais": [
+        { "titulo": "Express.js — documentação oficial", "url": "https://expressjs.com/pt-br/" },
+        { "titulo": "REST API com Node — MDN", "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs" }
+      ],
+      "modulos": [
+        {
+          "titulo": "Express.js: criando APIs REST",
+          "duracao_horas": 4,
+          "conceitos": ["Instalando e configurando Express", "Rotas: GET, POST, PUT, DELETE", "Parâmetros de rota e query string", "Retornando JSON com res.json()"],
+          "recursos": [
+            { "titulo": "Express — documentação oficial", "url": "https://expressjs.com/pt-br/guide/routing.html" }
+          ]
+        },
+        {
+          "titulo": "Middlewares e tratamento de erros",
+          "duracao_horas": 3,
+          "conceitos": ["O que é um middleware", "express.json() e express.urlencoded()", "Middleware de autenticação", "Error handling middleware (4 parâmetros)"],
+          "recursos": [
+            { "titulo": "Middlewares — Express docs", "url": "https://expressjs.com/pt-br/guide/using-middleware.html" }
+          ]
+        },
+        {
+          "titulo": "Variáveis de ambiente com dotenv",
+          "duracao_horas": 2,
+          "conceitos": ["Por que não colocar segredos no código", "Arquivo .env e .gitignore", "process.env para acessar variáveis", "Boas práticas de segurança"],
+          "recursos": [
+            { "titulo": "dotenv — npm", "url": "https://www.npmjs.com/package/dotenv" }
+          ]
+        },
+        {
+          "titulo": "Banco de dados com SQLite e Prisma",
+          "duracao_horas": 5,
+          "conceitos": ["O que é ORM", "Prisma schema e migrations", "CRUD com Prisma Client", "Relacionamentos entre tabelas"],
+          "recursos": [
+            { "titulo": "Prisma — documentação oficial", "url": "https://www.prisma.io/docs/getting-started" }
+          ]
+        },
+        {
+          "titulo": "Autenticação com JWT",
+          "duracao_horas": 4,
+          "conceitos": ["Como funciona JWT: header, payload, signature", "Gerando token com jsonwebtoken", "Verificando token em middleware", "Refresh tokens"],
+          "recursos": [
+            { "titulo": "JWT.io — guia e debugger", "url": "https://jwt.io/introduction" },
+            { "titulo": "jsonwebtoken — npm", "url": "https://www.npmjs.com/package/jsonwebtoken" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Crie uma API REST com Express que gerencia uma lista de tarefas (CRUD completo).",
+          "dica": "Implemente as rotas GET, POST, PUT e DELETE usando um array em memória como banco de dados inicial."
+        },
+        {
+          "enunciado": "Adicione autenticação JWT à sua API: proteja as rotas de criação e exclusão.",
+          "dica": "Use o pacote `jsonwebtoken` para gerar o token no login e um middleware para verificá-lo nas rotas protegidas."
+        }
+      ]
+    },
+    "avancado": {
+      "descricao": "Node.js avançado: streams, workers, microsserviços e deploy.",
+      "recursos_iniciais": [
+        { "titulo": "Streams — docs oficiais", "url": "https://nodejs.org/api/stream.html" },
+        { "titulo": "Worker Threads — docs oficiais", "url": "https://nodejs.org/api/worker_threads.html" }
+      ],
+      "modulos": [
+        {
+          "titulo": "Streams e processamento de grandes volumes de dados",
+          "duracao_horas": 5,
+          "conceitos": ["Readable, Writable, Transform streams", "pipe() para encadear streams", "Backpressure", "Processando CSV linha a linha com readline"],
+          "recursos": [
+            { "titulo": "Streams — docs oficiais", "url": "https://nodejs.org/api/stream.html" },
+            { "titulo": "Streams — nodejs.org learn", "url": "https://nodejs.org/en/learn/modules/backpressuring-in-streams" }
+          ]
+        },
+        {
+          "titulo": "Worker Threads e processamento paralelo",
+          "duracao_horas": 4,
+          "conceitos": ["Por que Node é single-threaded", "Worker Threads para CPU-bound tasks", "Comunicação via postMessage", "SharedArrayBuffer"],
+          "recursos": [
+            { "titulo": "Worker Threads — docs oficiais", "url": "https://nodejs.org/api/worker_threads.html" }
+          ]
+        },
+        {
+          "titulo": "Filas de mensagens com Bull e Redis",
+          "duracao_horas": 5,
+          "conceitos": ["Por que usar filas", "Redis como broker", "BullMQ: producer e consumer", "Retries e dead letter queue"],
+          "recursos": [
+            { "titulo": "BullMQ — documentação oficial", "url": "https://docs.bullmq.io/" }
+          ]
+        },
+        {
+          "titulo": "Microsserviços: conceitos e comunicação",
+          "duracao_horas": 5,
+          "conceitos": ["Monolito vs microsserviços", "Comunicação síncrona (REST/gRPC) vs assíncrona (filas)", "Service discovery", "API Gateway"],
+          "recursos": [
+            { "titulo": "Microsserviços — Martin Fowler", "url": "https://martinfowler.com/articles/microservices.html" }
+          ]
+        },
+        {
+          "titulo": "Deploy com Docker e CI/CD",
+          "duracao_horas": 4,
+          "conceitos": ["Dockerfile para Node.js", "docker-compose para múltiplos serviços", "GitHub Actions para CI/CD", "Variáveis de ambiente em produção"],
+          "recursos": [
+            { "titulo": "Docker para Node.js — docs oficiais", "url": "https://docs.docker.com/language/nodejs/" },
+            { "titulo": "GitHub Actions — documentação", "url": "https://docs.github.com/pt/actions" }
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "enunciado": "Processe um arquivo CSV de 1 milhão de linhas usando Streams, sem carregar tudo na memória.",
+          "dica": "Use `fs.createReadStream` com o módulo `readline` para processar linha a linha."
+        },
+        {
+          "enunciado": "Crie um sistema de filas simples: produtor envia tarefas e consumidor as processa em paralelo.",
+          "dica": "Use `worker_threads` para criar workers que processam as tarefas de um array compartilhado."
+        }
+      ]
+    }
+  }
+}
